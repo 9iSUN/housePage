@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画板</title>
+    <link rel="stylesheet" href="css/palette.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+<div class="palette">
+    <div class="tool">
+        <p style="text-align: center; font-size: 20px;">工具</p>
+        <label for="" class="iconfont icon-xiantiao"></label>
+        <label for="" class="iconfont icon-qianbi"></label>
+        <label for="" class="iconfont icon-juxing"></label>
+        <label for="" class="iconfont icon-duobianxing"></label>
+        <label for="" class="iconfont icon-ds"></label>
+        <label for="" class="iconfont icon-yuan"></label>
+        <label for="" class="iconfont icon-xuxian"></label>
+        <label for="" class="iconfont icon-yuanjiao-rect"></label>
+        <hr size="3" width="120">
+        <label for="" class="iconfont icon-tianchong"></label>
+        <label for="">
+            <input type="color" value="#000000" id="tColor">
+        </label>
+        <label for="" class="iconfont icon-miaobian"></label>
+        <label for="">
+            <input type="color" value="#000000" id="mColor">
+        </label>
+        <hr size="3" width="120">
+        <label for="" class="iconfont icon-xiangpi"></label>
+        <label for="" class="iconfont icon-wenzi"></label>
+        <label for="" class="iconfont icon-caiqie"></label>
+
+
+    </div>
+    <div class="draw">
+        <div class="gn">
+            <label for="" class="iconfont icon-xinjian"></label>
+            <label for="" class="iconfont icon-baocun"></label>
+            <label for="" class="iconfont icon-iocnchexiao"></label>
+        </div>
+        <div class="area">
+            <div class="mask"></div>
+            <div class="xp"></div>
+            <div class="clipArea"></div>
+            <canvas width="800" height="800"></canvas>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/index.js"></script>
+<script src="js/palette.js"></script>

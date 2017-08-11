@@ -1,0 +1,170 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+body{
+    background-image: url('../img/6.jpg');
+    background-position: center;
+    background-size:cover;
+}
+.top{
+    width:600px;
+    height:auto;
+    margin:20px auto;
+    font-size:16px;
+    text-align: center;
+    color:#000;
+
+}
+.top>.song{
+    font-size:22px;
+}
+.top>.singer{
+    font-size: 20px;
+    padding:20px 0;
+}
+.top>.lyrics{
+    max-height: 450px;
+}
+.top>.lyrics>li{
+    padding:10px;
+}
+.top>.lyrics>.hot{
+    color:#19C8A9;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.8);
+    position:absolute;
+    bottom:0;
+    left:0;
+
+}
+.bottom>.content{
+    width: 1000px;
+    height: 100%;
+    margin:auto;
+}
+.content>.left{
+    float:left;
+    width: 150px;
+    font-size: 22px;
+    color:#fff;
+    text-align: center;
+    line-height:118px;
+
+}
+.left>.iconfont{
+    font-size:36px;
+}
+.left>i:nth-child(2):before{
+    font-size: 42px;
+
+}
+.content>.middle{
+    float:left;
+    width:650px;
+    margin:0 25px;
+}
+.content>.middle>img{
+    float:left;
+    display: block;
+    margin-top:20px;
+
+}
+.middle>.progress{
+    float:left;
+    width: 500px;
+    margin: 20px;
+    color:#fff;
+}
+.progress>.progressTop{
+    height: 30px;
+    margin-top:10px;
+}
+.progressTop>.info{
+     float:left;
+
+ }
+.progressTop>.time{
+    float:right;
+
+}
+.progress>.progressBottom{
+
+    height:30px;
+    margin-top:8px;
+}
+.progressBottom>.fullP{
+    width: 500px;
+    height: 6px;
+    border-radius: 5px;
+    background: #424345;
+    position: relative;
+}
+.progressBottom>.fullP>.currentP{
+    width: 0;
+    height: 6px;
+    border-radius: 5px;
+    background: #31C27C;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.progressBottom>.fullP>.currentBtn{
+    width: 12px;
+    height:12px;
+    border-radius:50%;
+    background: #31C27C;
+    position: absolute;
+    left:-2px;
+    top:-4px;
+}
+.content>.right{
+    float:right;
+    width:150px;
+    text-align: center;
+    line-height: 100px;
+
+}
+.right>i{
+    float:left;
+    font-size: 34px;
+    margin-right:10px;
+    color:#fff;
+}
+.right>.fullV{
+    width: 100px;
+    height: 6px;
+    background:#424345;
+    border-radius: 5px;
+    float:left;
+    margin-top:50px;
+    position: relative;
+}
+.fullV>.currentV{
+    width: 50px;
+    height:100%;
+    border-radius: 5px;
+    background: #31C27C;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+.fullV>.vBtn{
+    width: 12px;
+    height: 12px;
+    background: #31C27C;
+    border-radius: 5px;
+    position:absolute;
+    left:43px;
+    top:-3px;
+}

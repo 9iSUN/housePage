@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="web前端个人简历,前端个人博客">
+    <meta name="description" content="个人简历，职业定位为web前端工程师">
+    <meta name="author" content="巩甜甜">
+    <title>Web前端工程师简历</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/cv.css">
+    <script src='js/echarts.common.min.js'></script>
+    <script src='js/echarts.min.js'></script>
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        window.location = "http://www.xiaohuokj.cn"
+    </script>
+    <![endif]-->
+    <!-- xiaohuokj.cn Baidu tongji analytics -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e5ed8cee288bc8886ff2a69a606f64e4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        .ly{
+            position: relative;
+            height: 558px;
+        }
+        .box{
+            width: 50%;
+            height: 500px;
+            position: absolute;
+            left:0;
+            top:-40px;
+            right:0;
+            bottom:0;
+            margin:auto;
+        }
+        .my{
+            background:#2c343c;
+            background-clip:content-box;
+            width: 400px;
+            height: 500px;
+            position: absolute;
+            left: -400px;
+            top: -15px;
+        }
+
+        .my>div{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            background-image:url(image/touxiang.jpg);
+            margin:0 auto;
+            margin-top:100px;
+            transition: all 1s;
+        }
+        .my>div:hover{
+            transform:rotate(360deg);
+        }
+        .my>h1{
+            width:100%;
+            margin:0 auto;
+            text-align:center;
+            margin-top:50px;
+            margin-bottom:30px;
+            font-size:20px;
+            color: #fff;
+        }
+        .my>h2{
+            width:100%;
+            margin:0 auto;
+            text-align:center;
+            font-size:20px;
+            margin-bottom:124px;
+            color: #fff;
+        }
+        .skills{
+            width:100%;
+            height:auto;
+            padding:50px 0;
+            text-align:center;
+            box-sizing:border-box;
+        }
+        .box>div>canvas{
+            width: 200px;
+            height:auto;
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+        }
+        p a{
+            display: block;
+            font-size: 12px;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<div class="content ">
+    <div class="cv-container">
+        <div id="section1" class="section active">
+            <div id="top" title="顶部">
+                <img src="image/top.png" alt="回到顶部">
+            </div>
+            <div id="perfect">
+
+            </div>
+            <div class="myIntro">
+                <h1 class="fade">Welcome to my personal homePage</h1>
+                <h3 class="fade">一个专注时间和效率的前端工程师</h3>
+                <span class="active fade" id="abMe">关于我</span>
+                <span id="mypro" class="fade">我的作品</span>
+            </div>
+            <ul class="bg-img">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div id="section2" class="section">
+            <!-- 导航条-->
+            <div id="nav-bar" class="bar">
+                <div class="container">
+                    <a href=" https://9isun.github.io/"> <div class="fl">博客</div></a>
+                    <ul class="fr nav-ul">
+                        <li>关于我</li>
+                        <li>求职意向</li>
+                        <li>作品集</li>
+                        <li>技术掌握</li>
+                        <li>我的经历</li>
+                        <li>联系我</li>
+                    </ul>
+                    <div class="fr more-nav">
+                        <img src="image/more.png" alt="更多">
+                    </div>
+                </div>
+                <ul class="nav-ul nav-xs-ul">
+                    <li>关于我</li>
+                    <li>求职意向</li>
+                    <li>作品集</li>
+                    <li>技术掌握</li>
+                    <li>我的经历</li>
+                    <li>联系我</li>
+                </ul>
+            </div>
+
+            <!--关于我-->
+            <h2>关于我</h2>
+            <hr>
+            <div class="center fades">
+                <p class="center"><img id="touxiang" src="image/touxiang.jpg" alt="头像" style="width:100px;height:100px;"/></p>
+                <div class="my-intro">
+                    <p>我叫巩甜甜，23岁，前端是一门通过技术改善用户体验的行业，作为计算机专业出身的我对代码有着浓厚的兴趣。
+                        利用空闲时间不断研究web技术，后台语言框架，之后便从事着前端工程师的职业。</p>
+                    <p>做过响应式页面，移动端页面，pc端页面。</p>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="section">
+            <h2>求职意向</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="col-md-3 col-xs-6 skill-ps skill">
+                    <p><img src="image/web.png" alt="切图"></p>
+                    <p class="ptitle">HTML5&CSS3页面</p>
+                    <p>运用H5&C3实现页面布局</p>
+                    <p>熟练使用H5&C3新标签</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-web skill">
+                    <p><img src="image/css.png" alt="css"></p>
+                    <p class="ptitle">JS&JQuery</p>
+                    <p>>用JS完成常见的前端功能特效</p>
+                    <p>用原生JQuery实现页面功能，以及做一些简单游戏。</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-js skill">
+                    <p><img src="image/js.png" alt="js"></p>
+                    <p class="ptitle">PHP&AJAX</p>
+                    <p>用PHP语言结合MySQL进行与后台的数据交互</p>
+                    <p>用AJAX读取后台数据。</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-h5 skill">
+                    <p><img src="image/h5.png" alt="h5"></p>
+                    <p class="ptitle">React&Nodejs&Vue</p>
+                    <p>运用React组件进行页面布局，实现前后端分离。</p>
+                    <p>Nodejs结合React进行布局，实现抓取数据。</p>
+                    <p>Vue结合Nodejs实现页面布局及其功能实现。</p>
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="section">
+            <h2>作品集</h2>
+            <hr>
+            <div class="container center fades">
+                <p class="center intros">写jq前端功能的时候，我的宗旨是能手写就手写，不依赖插件。手写代码更简洁高效，也更能提升自己技术。</p>
+                <!--<div class="col-md-3 col-xs-6">-->
+                    <!--<div class="imgbox">-->
+                        <!--<img src="image/01.jpg" alt="作品配图">-->
+                    <!--</div>-->
+                    <!--<a href="http://gttktv.duapp.com" target="_blank">-->
+                        <!--<div class="zp-cover">-->
+                            <!--<h4>商城类页面</h4>-->
+                            <!--<p>购物车结算，订单的选择或删除、金额的计算。</p>-->
+                            <!--<img src="image/search.png" alt="查看">-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <div class="col-md-4 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/06.jpg" alt="作品配图">
+                    </div>
+                    <a href="http://gttktv.duapp.com" target="_blank">
+                        <div class="zp-cover" style="top: 45%">
+                            <h4>测试类页面</h4>
+                            <p>AJAX获取后台数据，用数组读取歌手和歌曲。记录用户的数据返给后台管理系统。</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/02.jpg" alt="作品配图">
+                    </div>
+                    <a href="http://tripshoot.duapp.com" target="_blank">
+                        <div class="zp-cover">
+                            <h4>旅游类页面</h4>
+                            <p>移动APP，php,ajax运用的比较多</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/03.jpg" alt="作品配图">
+                    </div>
+                    <a href="http://gttnodejsnews.duapp.com" target="_blank">
+                        <div class="zp-cover">
+                            <h4>新闻类页面</h4>
+                            <p>记录实时新闻，结合Nodejs实现抓取数据</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/04.jpg" alt="作品配图">
+                    </div>
+                    <a href="http://gttnews.duapp.com" target="_blank">
+                        <div class="zp-cover">
+                            <h4>详情类页面</h4>
+                            <p>针对每条数据进行详细介绍</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <!--<div class="col-md-4 col-xs-6 ">-->
+                    <!--<div class="imgbox">-->
+                        <!--<img src="image/05.jpg" alt="作品配图">-->
+                    <!--</div>-->
+                    <!--<a href="http://boyastore.duapp.com/" target="_blank">-->
+                        <!--<div class="zp-cover">-->
+                            <!--<h4>购物类首页</h4>-->
+                            <!--<p>多数据APP，实现分类下的书籍</p>-->
+                            <!--<img src="image/search.png" alt="查看">-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/07.jpg" alt="作品配图">
+                    </div>
+                    <a href="javascript:void(0)" target="_blank">
+                        <div class="zp-cover">
+                            <p><a href="game/index.html">打字游戏</a></p>
+                            <p><a href="palette/index.html">画板</a></p>
+                            <p><a href="poke/index.html">扑克</a></p>
+                            <p><a href="audio/index.html">音乐播放器</a></p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/08.jpg" alt="作品配图">
+                    </div>
+                    <a href="https://9isun.github.io/" target="_blank">
+                        <div class="zp-cover">
+                            <h4>我的技术博客</h4>
+                            <p>自己平时的知识点积累~</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="section">
+            <h2>技术掌握</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>90</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">H5&C3</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>90</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">JS</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>85</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">PHP&AJAX</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>80</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">React&Nodejs&Vue</p>
+                </div>
+            </div>
+                <!--<div class="skills">-->
+                    <!--<h1>About My Skills</h1>-->
+                <!--</div>-->
+                <!--<div class="ly ">-->
+                    <!--&lt;!&ndash;<div class="my">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div></div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<h1>GongTiantian</h1>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<h2>Web Designer</h2>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--<div class="box col-md-3 col-xs-6"></div>-->
+                <!--</div>-->
+        </div>
+        <div id="section6" class="section">
+            <h2>我的经历</h2>
+            <hr>
+            <div class="container center fades">
+                <ul class="my-xp">
+                    <li>
+                        <div class="date-box">
+                            <p>02/2016</p>
+                            <p>-</p>
+                            <p>08/2017</p>
+                        </div>
+                        <div class="my-work my-xp-box">
+                            <strong>山西龙采科技有限公司</strong>
+                            <p class="ptitle">技术部/前端工程师</p>
+                            <p> 1.前期与UI沟通，根据实际可操作性和功能需求修改设计稿</p>
+                            <p> 2.主要负责项目前端布局，熟练运用H5,C3以及JS,JQuery等语言实现前端页面的效果</p>
+                            <p> 3.运用PHP，Ajax,React，MySQL等语言实现数据连接，也运用多种现有插件例如Swiper与Bootstrap,Ant完成各种效果实现，开发中也不断的与产品经理后台进行沟通改进，优化项目性能</p>
+
+
+                            <!--<p>利用JS、CSS3书写前端功能，让页面更充实丰富</p>-->
+                            <!--<p>并运用PHP与AJAX进行数据交互。</p>-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date-box">
+                            <p>09/2013</p>
+                            <p>-</p>
+                            <p>06/2017</p>
+                        </div>
+                        <div class="my-school my-xp-box">
+                            <strong>太原学院</strong>
+                            <p class="ptitle">大学本科</p>
+                            <p></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="section7" class="section">
+            <h2>联系我</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="flow">
+                    <!-- UY BEGIN -->
+                    <div id="uyan_frame" class="fl half"></div>
+
+                    <!--<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2110329"></script>-->
+                    <!--&lt;!&ndash; UY END &ndash;&gt;-->
+                    <!--<div class="half fr">-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="center beian"><a href="http://www.miitbeian.gov.cn" target="_blank">晋ICP备16011670号-2 Copyright © 2016 - 2017</a></p>
+
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/mycv.js"></script>
+
+</body>
+</html>
+<script src="js/echarts.common.min.js"></script>
+<script>
+
+
+
+    // 技能掌握
+    var box=document.querySelector(".box");
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(box);
+
+    // 指定图表的配置项和数据
+    var option = {
+        backgroundColor: '#2c343c',
+
+        title: {
+            text: 'My Skill Info',
+            left: 'center',
+            top: 30,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+
+        visualMap: {
+            show: false,
+            min: 80,
+            max: 600,
+            inRange: {
+                colorLightness: [0, 1]
+            }
+        },
+        series : [
+            {
+                name:'掌握情况',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'CSS'},
+                    {value:310, name:'HTML'},
+                    {value:274, name:'Jquery'},
+                    {value:235, name:'PS'},
+                    {value:400, name:'JavaScript'}
+                ].sort(function (a, b) { return a.value - b.value; }),
+                roseType: 'radius',
+                label: {
+                    normal: {
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 1)'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: '#c23531',
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(255, 255, 255, 0.4)'
+                    }
+                },
+
+                animationType: 'scale',
+                animationEasing: 'elasticOut',
+                animationDelay: function (idx) {
+                    return Math.random() * 200;
+                }
+            }
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
